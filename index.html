@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A configurable portfolio dashboard built with vanilla HTML, CSS, and JavaScript."
+    />
+    <title>Configurable Dashboard</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="app-layout">
+      <aside class="sidebar" aria-label="Sidebar navigation">
+        <div class="sidebar__header">
+          <div class="brand">
+            <div class="brand__mark">YM</div>
+            <div>
+              <p class="brand__eyebrow">Portfolio</p>
+              <h2 class="brand__name">Yakub Muhammad</h2>
+            </div>
+          </div>
+          <button class="icon-button sidebar-toggle" id="sidebarToggle" aria-expanded="true" aria-controls="sidebarNav">
+            <span aria-hidden="true">☰</span>
+            <span class="sr-only">Toggle sidebar</span>
+          </button>
+        </div>
+
+        <nav class="sidebar__nav" id="sidebarNav">
+          <a class="nav-item nav-item--active" href="#overview">
+            <span class="nav-item__icon" aria-hidden="true">◉</span>
+            <span>Overview</span>
+          </a>
+          <a class="nav-item" href="#projects">
+            <span class="nav-item__icon" aria-hidden="true">◌</span>
+            <span>Projects</span>
+          </a>
+          <a class="nav-item" href="#experience">
+            <span class="nav-item__icon" aria-hidden="true">◌</span>
+            <span>Experience</span>
+          </a>
+          <a class="nav-item" href="#contact">
+            <span class="nav-item__icon" aria-hidden="true">◌</span>
+            <span>Contact</span>
+          </a>
+        </nav>
+
+        <div class="sidebar__footer">
+          <button class="button button--ghost theme-toggle" id="themeToggle" type="button">
+            <span class="theme-toggle__icon" aria-hidden="true">☀</span>
+            <span class="theme-toggle__label">Switch theme</span>
+          </button>
+        </div>
+      </aside>
+
+      <div class="app-layout__body">
+        <header class="topbar">
+          <div>
+            <p class="topbar__eyebrow">Intermediat Frontend Engineer</p>
+            <h1 class="topbar__title">Configurable Dashboard UI</h1>
+          </div>
+        </header>
+
+        <main id="main-content" class="dashboard-main">
+          <section class="hero card" id="overview">
+            <div class="hero__content">
+              <p class="card__eyebrow">portfolio experience</p>
+              <h2>Built to feel polished, modular, and production-minded.</h2>
+              <p>
+                This dashboard demonstrates thoughtful information hierarchy, accessible interactions, and a configurable visual system using only native web technologies.
+              </p>
+              <div class="hero__actions">
+                <a class="button button--primary" href="#projects">Explore Work</a>
+                <a class="button button--ghost" href="#contact">Contact Me</a>
+              </div>
+            </div>
+            <div class="hero__panel">
+              <div class="stat-pill">Reactivity</div>
+              <div class="stat-pill">Accessibility</div>
+              <div class="stat-pill">Performance</div>
+            </div>
+          </section>
+
+          <section class="grid-section" aria-label="Key metrics and highlights">
+            <article class="card metric-card">
+              <p class="card__eyebrow">Experience</p>
+              <h3>3 Years</h3>
+              <p>Building resilient, user-first interfaces for product teams.</p>
+            </article>
+            <article class="card metric-card">
+              <p class="card__eyebrow">Performance</p>
+              <h3>95+ Lighthouse</h3>
+              <p>Designed with fast rendering and accessible interactions in mind.</p>
+            </article>
+            <article class="card metric-card">
+              <p class="card__eyebrow">Stack</p>
+              <h3>HTML / CSS / JS</h3>
+              <p>Lean architecture that stays maintainable without framework overhead.</p>
+            </article>
+          </section>
+
+          <section class="content-grid" id="projects">
+            <article class="card card--wide">
+              <div class="card__header">
+                <div>
+                  <p class="card__eyebrow">Featured Projects</p>
+                  <h3>Design Systems & Product Dashboards</h3>
+                </div>
+                <span class="badge">Open for collaboration</span>
+              </div>
+              <ul class="list-stack">
+                <li>
+                  <strong>Northstar Analytics:</strong> Led a scalable reporting experience for cross-functional stakeholders.
+                </li>
+                <li>
+                  <strong>SignalOS:</strong> Delivered a high-clarity operations dashboard with configurable views and theme support.
+                </li>
+                <li>
+                  <strong>Atlas Commerce:</strong> Built reusable UI modules and polished interaction states for a growth-focused product.
+                </li>
+              </ul>
+            </article>
+
+            <article class="card" id="experience">
+              <div class="card__header">
+                <div>
+                  <p class="card__eyebrow">Experience</p>
+                  <h3>What I Bring</h3>
+                </div>
+              </div>
+              <p>
+                I bring 3 years of hands-on experience building polished, user-focused web interfaces with strong attention to accessibility, responsive design, and clean front-end implementation.
+              </p>
+              <ul class="list-stack">
+                <li>Component-driven UI architecture</li>
+                <li>Accessibility and design system discipline</li>
+                <li>Performance-aware front-end delivery</li>
+              </ul>
+            </article>
+          </section>
+
+          <section class="card" id="contact">
+            <div class="card__header">
+              <div>
+                <p class="card__eyebrow">Contact</p>
+                <h3>Let’s build something high-impact.</h3>
+              </div>
+            </div>
+            <p>
+              Interested in a thoughtful UI implementation for your next product, portfolio, or internal tool? Reach out and I’ll help shape it.
+            </p>
+            <ul class="list-stack">
+              <li><strong>Email:</strong> <a href="mailto:yakubhassan2014@gmail.com">yakubhassan2014@gmail.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+2347066555500">+2347066555500</a></li>
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
